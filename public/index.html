@@ -783,7 +783,7 @@ textarea.field { min-height: 140px; resize: vertical; }
     if (C.social.github) container.append(socialLink('GitHub', C.social.github, 'github', false, ext));
     if (C.social.linkedin) container.append(socialLink('LinkedIn', C.social.linkedin, 'linkedin', false, ext));
     if (C.contact.whatsapp) container.append(socialLink('WhatsApp', 'https://wa.me/' + String(C.contact.whatsapp).replace(/\D/g, ''), 'whatsapp', true, ext));
-    if (C.contact.email) container.append(socialLink('Gmail', 'mailto:' + C.contact.email, 'mail', true));
+    if (C.contact.email) container.append(socialLink('Gmail', 'https://mail.google.com/mail/?view=cm&fs=1&to=' + C.contact.email, 'mail', true, ext));
   }
 
   /* ---------- Contact info ---------- */
